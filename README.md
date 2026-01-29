@@ -1,44 +1,26 @@
-# Assignment – OpenAPI Security Analyzer (Guard0 Security)
+## Running the Project Locally
 
-This project is a **static security analysis tool for OpenAPI (Swagger) specifications**, developed as part of the **Guard0 Security interview assignment**.
+## Step 1: Clone the repository
+```bash
+git clone <repository-url>
+cd openapi-security-analyzer
+Step 2: Create a virtual environment
+python -m venv venv
+Step 3: Activate the virtual environment
+Windows
+venv\Scripts\activate
+Linux / macOS
+source venv/bin/activate
+Step 4: Install dependencies
+pip install -r requirements.txt
+Step 5: Run the FastAPI application
+uvicorn app.main:app --reload
+Step 6: Access the application
+Health check
+http://127.0.0.1:8000/
 
-The tool parses OpenAPI v2 and v3 specifications, validates their structure, detects common API security issues, and produces a **security score** with actionable recommendations.
+Swagger UI
+http://127.0.0.1:8000/docs
 
----
-
-## Problem Statement
-
-Build a system that:
-- Accepts OpenAPI specifications as input
-- Validates the correctness of the specification
-- Identifies security misconfigurations and bad practices
-- Reports findings with severity and remediation guidance
-
----
-
-## Features
-
-- Supports **OpenAPI v2 (Swagger 2.0)** and **OpenAPI v3**
-- Input methods:
-  - Raw OpenAPI text
-  - File upload (`.yaml`, `.yml`, `.json`)
-  - URL-based OpenAPI spec fetching
-- Rule-based security checks
-- Severity-based scoring system (0–100)
-- Grouped findings by rule ID
-- Interactive Swagger UI for easy testing
-
----
-
-## Tech Stack
-
-- Python 3.9+
-- FastAPI
-- Uvicorn
-- PyYAML
-- Requests
-
----
-
-## Project Structure
-
+ReDoc
+http://127.0.0.1:8000/redoc
