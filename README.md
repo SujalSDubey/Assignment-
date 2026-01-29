@@ -4,7 +4,7 @@
 ```bash
 git clone <repository-url>
 cd openapi-security-analyzer
-Step 2: Create a virtual environment
+## Step 2: Create a virtual environment
 python -m venv venv
 Step 3: Activate the virtual environment
 Windows
