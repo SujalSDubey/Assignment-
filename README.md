@@ -1,25 +1,27 @@
 How to Run the Project
 
 1. Clone / open the project folder
+
+2. Open Command Prompt
    
-2. Create a virtual environment
+3. Create a virtual environment
 
         -python -m venv venv
 
-3. Activate the virtual environment
+4. Activate the virtual environment
 
         -venv\Scripts\activate
 
-4. Install dependencies
+5. Install dependencies
 
         -pip install -r requirements.txt
 
 
-5. Run the application
+6. Run the application
 
         -uvicorn app.main:app --reload
 
-6. Open the application in browser
+7. Open the application in browser
 
         -http://127.0.0.1:8000/docs
 
