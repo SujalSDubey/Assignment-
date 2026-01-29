@@ -1,26 +1,34 @@
-## Running the Project Locally
+How to Run the Project
 
-## Step 1: Clone the repository
-```bash
-git clone <repository-url>
-cd openapi-security-analyzer
-## Step 2: Create a virtual environment
-python -m venv venv
-Step 3: Activate the virtual environment
-Windows
-venv\Scripts\activate
-Linux / macOS
-source venv/bin/activate
-Step 4: Install dependencies
-pip install -r requirements.txt
-Step 5: Run the FastAPI application
-uvicorn app.main:app --reload
-Step 6: Access the application
-Health check
-http://127.0.0.1:8000/
+1. Clone / open the project folder
 
-Swagger UI
-http://127.0.0.1:8000/docs
+        -cd Project
+   
+2. Create a virtual environment
 
-ReDoc
-http://127.0.0.1:8000/redoc
+        -python -m venv venv
+
+3. Activate the virtual environment
+
+        -venv\Scripts\activate
+
+4. Install dependencies
+
+        -pip install -r requirements.txt
+
+
+5. Run the application
+
+        -uvicorn app.main:app --reload
+
+6. Open the application in browser
+
+        -http://127.0.0.1:8000/docs
+
+Use the Swagger UI to:
+
+  -Paste an OpenAPI specification
+
+  -Upload a YAML/JSON file
+
+  -Provide a URL to fetch an OpenAPI spec
