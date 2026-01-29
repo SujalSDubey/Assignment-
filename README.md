@@ -1,8 +1,6 @@
 How to Run the Project
 
 1. Clone / open the project folder
-
-        -cd Project
    
 2. Create a virtual environment
 
